@@ -20,7 +20,7 @@ class SoftAssert(unittest.TestCase):
             error_message = "\n".join(self.soft_assert_errors)
             self.fail(f"SoftAssert failed:\n{error_message}")
 
-class TestYouTube(unittest.TestCase):  # Убрали наследование от SoftAssert
+class TestYouTube(unittest.TestCase):
 
     def setUp(self) -> None:
         self.driver = webdriver.Chrome()
